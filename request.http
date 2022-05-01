@@ -1,0 +1,12 @@
+###
+
+POST http://localhost:3977/api/v1/users/user HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "karol",
+  "lastname": "Rojas",
+  "email": "karol.rojasb@autonoma.edu.co",
+  "password": "password123",
+  "active": true
+}
