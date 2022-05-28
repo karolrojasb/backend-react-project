@@ -18,7 +18,7 @@ exports.createAccessWithToken = (user) => {
 }
 
 exports.createRefreshToken = (user) => {
-  const payLoad = {
+  const payload = {
     id: user._id,
     expiration_date: moment().add(30, 'days').unix()
   }

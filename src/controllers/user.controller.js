@@ -53,7 +53,7 @@ exports.signIn = (req, res) => {
   const params = req.body
   const email = params.email.toLowerCase()
   const password = params.password
-  UserService.findOne({ email }, (err, userStored) => {
+  user_model.findOne({ email }, (err, userStored) => {
     if (err) {
       res.status(500).send({ message: "Error del servidor "})
     } else {
