@@ -8,4 +8,7 @@ user_router.post('/user', UserController.createUser)
 /*http://localhost:3977/api/v1/users/signup */
 user_router.post("/signup", UserController.signUp)
 
+/*http://localhost:3977/api/v1/users/signin */
+user_router.post("/signin", UserController.signIn)
+
 module.exports = user_router
